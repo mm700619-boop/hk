@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>你的品牌｜香港專業服務</title>
+  <meta name="description" content="在香港提供（你的服務）：透明價格、清晰流程、快速回覆。立即WhatsApp預約或線上查詢。">
+  <style>
+    :root{--max:1100px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;line-height:1.6;margin:0;color:#222}
+    header,section,footer{padding:48px 20px}
+    .wrap{max-width:var(--max);margin:auto}
+    .hero{display:grid;gap:24px;align-items:center}
+    .hero h1{font-size:clamp(28px,4vw,42px);margin:0 0 8px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 18px;border-radius:12px;border:1px solid #111;text-decoration:none;color:#111;display:inline-block}
+    .btn.primary{background:#111;color:#fff}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{border:1px solid #eee;border-radius:16px;padding:18px;background:#fff}
+    .price{font-weight:700;font-size:20px}
+    figure{margin:0}
+    figcaption{font-size:12px;color:#666;margin-top:6px}
+    details{border:1px solid #eee;border-radius:12px;padding:12px;background:#fafafa}
+    footer{background:#111;color:#eee}
+    input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid #ccc}
+    form .row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    small.muted{color:#666}
+  </style>
+</head>
+<body>
+  <header class="wrap hero">
+    <div>
+      <h1>你的品牌｜香港專業服務</h1>
+      <p>清楚的流程、透明的收費、在地支援。支援 FPS 轉數快與信用卡。</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/852XXXXXXXX?text=想預約諮詢">WhatsApp 即時諮詢</a>
+        <a class="btn" href="#contact">線上查詢</a>
+      </div>
+      <small class="muted">商業登記號碼（如有）：BR-XXXXXXX</small>
+    </div>
+    <figure aria-label="主視覺">
+      <img src="hero.jpg" alt="你的服務主視覺（可替換）" width="100%" loading="lazy">
+      <figcaption>圖像 ID：x001</figcaption>
+    </figure>
+  </header>
+
+  <section class="wrap">
+    <h2>我們的服務</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>服務 A</h3>
+        <p>適合對象／交付內容／時程（例如 3–5 工作天）。</p>
+        <p class="price">HKD 2,980 起</p>
+      </article>
+      <article class="card">
+        <h3>服務 B</h3>
+        <p>範圍、限制與加購項目說明。</p>
+        <p class="price">HKD 5,800 起</p>
+      </article>
+      <article class="card">
+        <h3>服務 C</h3>
+        <p>常見成果指標與案例連結。</p>
+        <p class="price">HKD 9,800 起</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>流程與保證</h2>
+    <ol>
+      <li>免費諮詢（WhatsApp/電話）</li>
+      <li>確認需求與報價（以 HKD 標示，含/未含稅標明）</li>
+      <li>簽核與付款（FPS/信用卡/轉帳）</li>
+      <li>製作與交付（交付清單與時間表）</li>
+      <li>售後支援（7–14 天保固/修訂）</li>
+    </ol>
+  </section>
+
+  <section class="wrap">
+    <h2>常見問答（FAQ）</h2>
+    <div class="grid">
+      <details><summary>是否提供發票／收據？</summary><p>可提供電子收據；如需商業發票請於下單時提供資料。</p></details>
+      <details><summary>如何退款或改期？</summary><p>請參考下方 Refund/Cancel 政策；特定客製化服務不適用。</p></details>
+      <details><summary>如何下單付款？</summary><p>支援 FPS／信用卡；下單後 24 小時內發出確認。</p></details>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>線上查詢</h2>
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <div class="row">
+        <p><label>姓名*</label><input name="name" required></p>
+        <p><label>電郵*</label><input name="email" type="email" required></p>
+      </div>
+      <p><label>想了解的服務</label>
+        <select name="service">
+          <option>服務 A</option><option>服務 B</option><option>服務 C</option>
+        </select>
+      </p>
+      <p><label>留言</label><textarea name="message" rows="5" placeholder="請簡述你的需求與時程"></textarea></p>
+      <p><button class="btn primary" type="submit">送出查詢</button></p>
+      <small class="muted">提交即表示你同意我們之 Privacy Policy 與 Terms。</small>
+    </form>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2025 你的品牌｜All rights reserved.</p>
+      <p><a href="/privacy.html" style="color:#fff">Privacy Policy</a> ｜ <a href="/terms.html" style="color:#fff">Terms</a> ｜ <a href="/refund.html" style="color:#fff">Refund/Cancel</a></p>
+    </div>
+  </footer>
+</body>
+</html>
